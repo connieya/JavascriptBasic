@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <!-- script의 위치는 어디가 좋을까 ?  -->
+
+    <!-- head 안에 넣은게 좋을지? body 끝나는 지점에 넣는게 좋을지?  -->
+   <!-- <script src="./script.js"></script>  -->
+
+    <!-- <script>  위와 동일함 밑에 코드를 보고 이해 해보길
+
+          var hw = document.getElementById('hw');   html 코드에 있는 아이디 값이 밑에 있기 때문에
+            hw.addEventListener('click', function () {         var hw가 id값을 읽어오지 못해 null이 된다.
+                alert('Hello world');
+            })
+    </script> -->
+
+    <!-- window.onload를 이용하여 해결 할 수 있다.  -->
+    <!-- <script>
+
+       window.onload = function(){
+       var hw = document.getElementById('hw');
+            hw.addEventListener('click', function () {
+                var hw가
+                alert('Hello world');
+            })
+            }
+    </script> -->
+
+<!-- 
+    404 에러가 아니라서 파일 위치 문제는 아니다.
+    하지만 script.js에 있는 addEventListener를 읽어 올수 없다.   -->
+</head>
+<body>
+
+    <input type="button" value="hello world" id="hw" />
+
+    <!-- head 태그에 위치 시킬수도 있다. 하지만 이 경우는 오류가 발생한다.   -->
+
+
+    <script src="./script.js"></script>
+
+    <!-- 
+    script 태그를 body 끝에 위치시키면 window.onload를 사용하지 않아도 된다.
+    왜냐하면 id : hw가 위에 있기 때문에 id 값을 읽을 수 있기 때문이다. -->
+
+    
+</body>
+</html>
+
