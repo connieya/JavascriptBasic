@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector.html</title>
+</head>
+<body>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>html</li>
+        <li class="active">css</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+         var li = document.querySelector('li'); 
+
+        //var li = document.getElementsByName('li');
+        li.style.color ='red';
+
+        var li = document.querySelector('.active');
+
+        
+        li.style.color = 'blue';
+
+        
+            </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo.html</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <script>
+
+        var ul = document.getElementsByTagName('ul');
+
+                    // 유사배열을 담는 변수 lis
+        var lis = document.getElementsByTagName('li');
+
+            document.write(ul); 
+            document.write(lis);
+
+
+        for(var i=0; lis.length; i++){
+            lis[i].style.color='red';
+        }
+
+       
+    </script>
+</body>
+</html>

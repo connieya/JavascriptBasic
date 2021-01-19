@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo2.html</title>
+</head>
+<body>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+    //    var uls = function getUl(){
+
+    //         var ul = document.getElementsByTagName('ul');
+
+    //         return ul;
+
+        
+    //     }
+    //     document.write("ul : ",ul);
+    //     document.write(uls)
+
+        // function getUl(){
+        //     var ul = document.getElementsByTagName('ul');
+        //     for(var i = 0; i<ul.length; i++){
+        //       var uls =  ul[i]
+        //     }
+        // }
+    
+        var ul = document.getElementsByTagName('ul');
+         for (var i = 0; ul.length; i++) {
+                ul[i].style.color = 'red';
+
+            }
+
+        
+        var lis = ul.getElementsByTagName('li');
+
+        for(var i=0; lis.length; i++){
+            lis[i].style.color='red';
+
+        }
+
+    </script>
+</body>
+</html>
