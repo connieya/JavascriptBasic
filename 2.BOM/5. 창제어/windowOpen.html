@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>windowOpen.html</title>
+</head>
+<body>
+    <input type="button" value="open" onclick="winopen()" />
+    <input type="text" onkeypress="winmessage(this.value)" />
+    <input type="button" value="close" onclick="winclose()" />
+
+    <!-- 창 제어  -->
+    <script>
+        function winopen(){
+            win = window.open('demo2.html','ot','width=230px, height=200px');
+        }
+        function winmessage(msg){
+            win.document.getElementById('message').innerText =msg;
+        }
+        function winclose(){
+            win.close();
+        }
+
+    </script>
+
+</body>
+</html>
