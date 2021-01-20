@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="start">
+    <ul>
+        <li><a href="./532">html</a></li>
+        <li><a href="./533">css</a></li>
+        <li><a href="./534">javaScript</a>
+            <ul>
+                <li><a href="./535">javaScript core</a> </li>
+                <li><a href="./536">DOM</a></li>
+                <li><a href="./537">BOM</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        // 재귀함수  =>  어떠한 함수가 실행될 때 자기 자신을 호출하는 함수
+        // function traverse(target, callback){
+        //     if(target.nodeType === 1){
+        //         callback(target);
+        //         var c = target.chilNodes;
+        //         for(var i=0; i<c.length; i++){
+        //             traverse(c[i],callback);
+        //         }
+        //     }
+
+        // }
+
+        function traverse(target, callbak){
+            callbak(target);
+        }
+
+        traverse(document.getElementById('start') , function(elem){
+            console.log(elem);
+        });
+
+        var s = document.getElementById('start');
+        console.log(s.nodeName); // body
+        console.log(s.nodeType); //
+
+        var li = s.firstChild;
+
+        console.log(li); // #text
+        console.log(li.nextSibling.nodeType); //1
+    </script> 
+
+
+</body>
+
+</html>
