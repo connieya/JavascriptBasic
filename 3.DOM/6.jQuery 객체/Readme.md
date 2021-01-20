@@ -14,6 +14,6 @@ chainig이란 선택된 엘리먼트에 대해서 연속적으로 작업을 처�
 
 # jQuery API
 
-(jQuery Api)[https://api.jquery.com/]
+[jQuery Api](https://api.jquery.com/)
 
 jQuery 라이브러리 사용방법

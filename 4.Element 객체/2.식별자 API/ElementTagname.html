@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Element.tagName 알아보기  -->
+
+    <ul>
+        <li>Html</li>
+        <li>css</li>
+        <li id="active" class="important current">Javascript</li>
+    </ul>
+    <script>
+        var li = document.getElementById('active')
+
+        console.log(li);
+        console.log(document.getElementById('active').tagName) // LI
+
+        // tagName은 읽기 전용이다 값을 변경할 수 없다
+        // 예를 들어 tagName을  LI에서 a 로 바꾼다고 해도 웹 브라우저에는 아무 변화가 없다
+    </script>
+</body>
+</html>
