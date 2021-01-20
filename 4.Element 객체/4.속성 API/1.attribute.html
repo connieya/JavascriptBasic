@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://opentutorials.org" id="target">opentutorials</a>
+
+    <script>
+        var t = document.getElementById('target');
+
+        console.log(t.getAttribute('href'));
+        console.log(t.href);
+
+        console.log(t.setAttribute('title','opentutorials.org'))
+        console.log(t.getAttribute('title'))
+        console.log(t)
+        console.log(t.setAttribute('href','https://www.naver.com'))
+
+        t.removeAttribute('title');
+        console.log(t.hasAttribute('title'));
+    </script>
+
+</body>
+</html>
