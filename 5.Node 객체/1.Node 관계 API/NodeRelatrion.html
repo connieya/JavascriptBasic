@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="start">
+    <ul>
+        <li><a href="./532">html</a></li>
+        <li><a href="./533">css</a></li>
+        <li><a href="./534">javaScript</a>
+            <ul>
+                <li><a href="./535">javaScript core</a> </li>
+                <li><a href="./536">DOM</a></li>
+                <li><a href="./537">BOM</a></li>
+            </ul>
+        </li>
+    </ul>
+<script>
+var s = document.getElementById('start');
+console.log(1, s.firstChild);  // #text   왜냐하면 body 태그 와 ul사이에 공백이 있기  때문이다.
+console.log(2,s.lastChild);
+
+console.log(3,s.nextSibling) // null 
+var ul = s.firstChild
+    console.log(4, ul.nextSibling)
+    console.log(5,ul.nextSibling.nextSibling);
+    console.log(6, ul.nextSibling.nextSibling.nextSibling);
+</script>
+
+
+</body>
+</html>
